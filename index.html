@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Gekonde</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src = "Images/MyLogo.png" class = "logo">
+                <ul id = "sidemenu">
+                    <li><a href = "#header">Home</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#services">Services</a></li>
+                    <li><a href = "#portfolio">Portfolio</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Daniel</span><br>Gekonde from Michigan</h1>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------------------About----------------------------------------->  
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/IMG_5614.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">About Me</h1>
+                <p>Aspiring software engineer and cybersecurity enthusiast with a strong foundation in Python, C++, 
+                    and cybersecurity principles. Experienced in data structures, object-oriented programming, and 
+                    problem-solving. Seeking a Summer 2025 internship to apply my technical and analytical skills in a 
+                    professional setting.</p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class = "tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id = "skills">  <!--Skills--> 
+                    <ul>
+                        <li><span>Coding</span><br>Python, C++, HTML, CSS</li>
+                        <li><span>Technologies</span><br>Visual Studio Code, PyCharm, Terminal/Bash scripting</li>
+                        <li><span>Microsoft Office</span><br>Word, Excel, Powerpoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "experience"> <!--Experience--> 
+                    <ul>
+                        <li><span>2021-2022</span><br>Data Structures and Algorithms</li>
+                        <li><span>2004-2025</span><br>Team Lead</li>
+                        <li><span>App Development</span><br>Building iOS/Android Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "education"> <!--Education--> 
+                    <ul>
+                        <li><span>2026</span><br>B.S. Computer Science, Michigan State University</li>
+                        <li><span>2022</span><br>High School Diploma, West Bloomfield High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------Services------------------------------------------------->
+<div id = "services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="bi bi-code-slash"></i>
+                <h2>Coding</h2>
+                <p>Experienced in data structures, object-oriented programming, and 
+                    problem-solving.</p>
+                <a href = "#">Learn more</a>
+            </div>
+            <div>
+                <i class="bi bi-briefcase"></i>
+                <h2>Business</h2>
+                <p>Experienced in identifying market needs, pitching solutions, and 
+                    aligning software development with real-world business challenges.</p>
+                <a href = "#">Learn more</a>
+            </div>
+            <div>
+                <i class="bi bi-lightbulb"></i>
+                <h2>Problem Solving</h2>
+                <p>Experienced in algorithm design, debugging, and performance optimization. 
+                    Adept at breaking down complex challenges and building efficient, scalable solutions.</p>
+                <a href = "#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------------Portfolio------------------------------------------------>
+<div id = "portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src = "Images/newwork-1.jpg">
+                <div class="layer">
+                    <h3>Desktop Organizer</h3>
+                    <p>Automatically organizes files on your desktop.</p>
+                    <a href = "https://github.com/danielgeko/Desktop-Cleaner/tree/main"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src = "Images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app allows you to connect with talent people across the world.</p>
+                    <a href = "#"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src = "Images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app allows you to connect with talent people across the world.</p>
+                    <a href = "#"><i class="bi bi-link-45deg"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href = "#" class = "btn">See More</a>
+    </div>
+</div>
+<!----------------------------------------Contact------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title">Contact Me</h1>
+                <p><i class="bi bi-send"></i> danielgekonde@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> 1+ (248)-836-8123</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/daniel.gekonde.7/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-gekonde-7268381ab/"><i class="bi bi-linkedin"></i></i></a>
+                    <a href="https://www.instagram.com/danielgeko/"><i class="bi bi-instagram"></i></i></a>
+                </div>
+                <a href = "Current Resume.docx" download class = "btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type = "text" name = "Name" placeholder="Your Name" required>
+                    <input type = "email" name = "Email" placeholder="Your Email" required>
+                    <textarea name = "Message" rows = "6" placeholder="Your Message"></textarea>
+                    <button type = "submit" class = "btn btn2">Submit</button>
+                </form>
+                 <span id = "msg"></span>
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxrPTGgMQQe85pwetVuuB8TCHhJ5xnrlPS3uLnwt40ddhpm0slyvP95UVgPfDJdBFg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
